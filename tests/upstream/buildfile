@@ -1,6 +1,6 @@
 import libs = libpdjson%lib{pdjson}
 
-exe{tests}: {h c}{**} $libs
+exe{driver}: {h c}{**} $libs
 
 switch $c.class
 {
