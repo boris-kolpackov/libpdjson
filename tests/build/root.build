@@ -1,3 +1,5 @@
+c.std = 99
+
 using c
 
 h{*}: extension = h
