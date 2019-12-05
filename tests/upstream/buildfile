@@ -1,3 +1,9 @@
 import libs = libpdjson%lib{pdjson}
 
 exe{tests}: {h c}{**} $libs
+
+switch $c.class
+{
+  case 'gcc'
+    c.coptions += -Wno-missing-field-initializers
+}
