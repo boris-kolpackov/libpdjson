@@ -1,0 +1,14 @@
+: 1
+name: libpdjson
+version: 0.1.0-a.0.z
+summary: JSON pull parser C library
+license: public domain
+topics: JSON, C, parser
+description-file: README.md
+url: https://github.com/skeeto/pdjson
+package-url: https://github.com/boris-kolpackov/libpdjson
+email: wellons@nullprogram.com
+package-email: boris@codesynthesis.com
+builds: all
+depends: * build2 >= 0.12.0
+depends: * bpkg >= 0.12.0
