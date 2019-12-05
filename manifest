@@ -6,7 +6,7 @@ license: public domain
 topics: JSON, C, parser
 description-file: README.md
 url: https://github.com/skeeto/pdjson
-package-url: https://github.com/boris-kolpackov/libpdjson
+package-url: https://github.com/build2-packaging/libpdjson
 email: wellons@nullprogram.com
 package-email: boris@codesynthesis.com
 builds: all
