@@ -14,15 +14,12 @@ h{version}: in{version} $src_root/manifest
 #
 c.poptions =+ "-I$out_root" "-I$src_root"
 
-obja{*}: c.poptions += -DLIBPDJSON_STATIC_BUILD
-objs{*}: c.poptions += -DLIBPDJSON_SHARED_BUILD
+if ($c.target.class == 'windows')
+  objs{*}: c.poptions += '-DPDJSON_SYMEXPORT=__declspec(dllexport)'
 
 # Export options.
 #
 lib{pdjson}: c.export.poptions = "-I$out_root" "-I$src_root"
-
-liba{pdjson}: c.export.poptions += -DLIBPDJSON_STATIC
-libs{pdjson}: c.export.poptions += -DLIBPDJSON_SHARED
 
 # For pre-releases use the complete version to make sure they cannot be used
 # in place of another pre-release or the final version. See the version module
