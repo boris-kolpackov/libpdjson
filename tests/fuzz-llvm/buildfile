@@ -1,0 +1,6 @@
+import libs = libpdjson%lib{pdjson}
+
+exe{driver}: {h c}{**} $libs
+{
+  c.loptions += -fsanitize=fuzzer
+}
