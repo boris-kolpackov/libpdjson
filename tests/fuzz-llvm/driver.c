@@ -28,17 +28,17 @@ parse(const void *data, size_t size, bool stream)
     /* Let's get a warning if any new values are added. */
     switch (t)
     {
-    case JSON_DONE:                                break;
-    case JSON_ERROR:  json_get_error(json);        break;
-    case JSON_STRING: json_get_string(json, NULL); break;
-    case JSON_NUMBER: json_get_number(json);       break;
+    case JSON_DONE:                                                 break;
+    case JSON_ERROR:  assert (json_get_error(json) != NULL);        break;
+    case JSON_STRING: assert (json_get_string(json, NULL) != NULL); break;
+    case JSON_NUMBER: json_get_number(json);                        break;
     case JSON_TRUE:
     case JSON_FALSE:
     case JSON_NULL:
     case JSON_OBJECT:
     case JSON_OBJECT_END:
     case JSON_ARRAY:
-    case JSON_ARRAY_END:                           break;
+    case JSON_ARRAY_END:                                            break;
     }
   }
   while (t != JSON_DONE && t != JSON_ERROR);
