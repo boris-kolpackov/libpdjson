@@ -1,4 +1,4 @@
-This an [LLVM LibFuzzer](https://llvm.org/docs/LibFuzzer.html)-based test.
+This is an [LLVM LibFuzzer](https://llvm.org/docs/LibFuzzer.html)-based test.
 
 A typical setup could look like this:
 
