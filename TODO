@@ -1,7 +1,5 @@
 On the revision:
 
-- Fix the license in the manifest from Unlicence to Unlicense.
-
 - Normalize C comments in the tests source code:
 
   Replace
