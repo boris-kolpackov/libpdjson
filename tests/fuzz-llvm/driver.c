@@ -1,8 +1,10 @@
 #include <stddef.h>
 #include <stdint.h>
-#include <assert.h>
 
 #include <libpdjson/pdjson.h>
+
+#undef NDEBUG
+#include <assert.h>
 
 /* Parse the data in the specified stream mode returning true if the data is
    valid JSON and false otherwise. */
