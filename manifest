@@ -1,6 +1,6 @@
 : 1
 name: libpdjson
-version: 0.1.0+3
+version: 0.1.0+4
 summary: JSON pull parser C library
 license: Unlicense
 topics: JSON, C, parser
